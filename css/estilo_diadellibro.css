@@ -1,0 +1,115 @@
+/*Definimos la fuente y el maquetado de la página*/
+body, html{
+    padding: 0;
+    margin: 0;
+    font-family:"Trebuchet MS";
+}
+
+/*Maquetado del título principal*/
+h1{
+    text-align: center;
+    margin-top: 45px;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 50px;
+    background-color: darkred;
+    color:gold;
+    text-shadow: 2px 2px 2px black;
+    border: solid black;
+    font-size: 72px;
+}
+
+.menu_fijo{
+    overflow: hidden;
+    position: fixed;
+    top: 0; 
+    width: 100%;
+    background-color: gold;
+    border: solid black;
+}
+
+.menu_fijo a{
+    float: left;
+    display: block;
+    background-color: gold;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-weight: bold;
+    
+}
+
+.menu_fijo a:hover {
+    background: #ddd;
+    color: black;
+  }
+
+section{
+    padding: 140px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+
+article{
+    border: solid black;
+    border-radius: 40px;
+    padding:20px;
+    margin: 30px;
+}
+
+h2{
+    text-align: center;
+    margin: 0;
+    color: gold;
+    text-shadow: 2px 2px 2px darkred;
+    font-size: 48px;
+}
+
+/*Centrado y regulado de tamaño de imagenes */
+img{
+    width: 35%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#sp{
+    width: 100%;
+}
+
+.imgen{
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.column {
+    flex: 50%;
+    padding: 10px;
+  }
+
+p {
+    font-size: 18px;
+}
+
+
+footer{
+    text-align: center;
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    background-color: darkred;
+    color:gold;
+    border: solid black;
+}
+
+footer img{
+    width:8%;
+    bottom:40px;
+    right: 0;
+}
