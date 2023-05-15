@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Día del Libro</title>
+    <link rel="stylesheet" type="text/css" href="../css/estilo_diadellibro.css" />
+    <link href="../imagenes/libros_apilados.png" type="image/x-icon" rel="icon" />
+</head>
+
+<body onload="actualizarReloj()">
+
+    <div class="contenedor">
+
+        <header>
+            <h1>DÍA DEL LIBRO</h1>
+        </header>
+
+        <div class="menu_fijo">
+            <div class="content_menu">
+                <a href="../diadellibro.html">ORIGEN</a>
+                <a href="celebracion.html">CELEBRACIÓN</a>
+                <a href="santjordi.html">SANT JORDI</a>
+                <a href="cervantes.html">CERVANTES</a>
+                <a href="shakespeare.html">SHAKESPEARE</a>
+                <a href="formulario.html">CONTÁCTANOS</a>
+            </div>
+        </div>
+
+        <div id="inicio" class="contenido">
+            <section id="origen">
+                <article>
+                    <h2>CONTACTO</h2>
+                    <div id="buttons">
+                        <button id="formulario" onclick="clear(),crearForm()">CREAR FORMULARIO</button>
+                    </div>
+                    <div id="borrador"></div>
+                </article>
+            </section>
+
+            <footer id="cierre">
+                <p>Roberto Fernández Pérez<br>
+                    Lenguaje de Marcas y Sistemas de Gestión de la Información</p>
+                <img id="ibq" src="../imagenes/ibq.jpg" alt="Logo del I.E.S Bernaldo de Quirós" />
+                <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                    <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss"
+                        alt="¡CSS Válido!" />
+                </a>
+                <a id="sub" href="#inicio"><img src="../imagenes/subir.jpg" alt="Boton de subir"/></a>
+                <div id="reloj"></div>
+            </footer>
+        </div>
+    </div>
+    <script src="../JS/dialibro.js"></script>
+</body>
+</html>

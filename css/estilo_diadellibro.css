@@ -5,6 +5,7 @@ body, html{
     font-family:"Trebuchet MS";
 }
 
+/*Imagen de fondo de pantalla estática*/
 body{
     background-image: url("../imagenes/libreria.jpg"); 
     background-attachment: fixed;
@@ -18,33 +19,31 @@ h1{
     margin-top: 45px;
     white-space: nowrap;
     overflow: hidden;
-    padding: 50px;
-    background-color: darkred;
+    padding: 30px;
     color:gold;
-    text-shadow: 2px 2px 2px black;
-    border: solid black;
+    text-shadow: 4px 4px 4px black;
     font-size: 72px;
+    background-color: darkred;
 }
 
+/*Maquetado del menú fijo*/
 .menu_fijo{
     overflow: hidden;
     position: fixed;
     top: 0; 
     width: 100%;
+    border-color: black ;
     background-color: gold;
-    border: solid black;
 }
 
+/*Maquetado de los enlaces y el hover*/
 .menu_fijo a{
-    float: left;
-    display: block;
     background-color: gold;
     color: black;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
     font-weight: bold;
-    
 }
 
 .menu_fijo a:hover {
@@ -52,6 +51,15 @@ h1{
     color: black;
   }
 
+/*Maquetado del centrado del contenido del menú*/
+.content_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+/*Maquetado de las secciones y el espacio empleado*/
 section{
     padding: 140px;
     padding-top: 10px;
@@ -59,6 +67,7 @@ section{
     
 }
 
+/*Maquetado de cada artículo y el contenido pricipal de la página*/
 article{
     border: solid black;
     border-radius: 40px;
@@ -67,12 +76,21 @@ article{
     background-color: #ffffff;
 }
 
+/*Maquetado de los títulos*/
 h2{
     text-align: center;
     margin: 0;
     color: gold;
     text-shadow: 2px 2px 2px darkred;
     font-size: 45px;
+}
+
+h3 {
+    text-align: center;
+    margin: 0;
+    color: darkred;
+    text-shadow: 2px 2px 2px gold;
+    font-size: 25px;
 }
 
 /*Centrado y regulado de tamaño de imagenes */
@@ -85,8 +103,11 @@ img{
     margin-bottom: 10px;
 }
 
+#ibq{
+    background-color: transparent;
+}
 
-
+/*Maquetado de las imágenes*/
 .imgen{
     display: flex;
     width: 60%;
@@ -103,12 +124,13 @@ p {
     font-size: 18px;
 }
 
-
+/*Final de la página*/
 footer{
     text-align: center;
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
+    margin-bottom: 30px;
     background-color: darkred;
     color:gold;
     border: solid black;
@@ -119,3 +141,97 @@ footer img{
     bottom:40px;
     right: 0;
 }
+
+/*JS*/
+.visible {
+    display: block;
+}
+
+/*Edición del Carrusel*/
+.invisible {
+    display: none;
+}
+
+/*Maquetado de los botones del Carrusel*/
+button{
+    color: gold;
+    background-color: darkred;
+    font-size: 110%;
+}
+
+button:hover{
+    color:  darkred;
+    background-color: gold;
+}
+
+#buttons {
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#carrusel img{
+    height: 400px;
+    object-fit: scale-down;
+}
+
+/*Efecto de transición de las imágenes del hover*/
+.fade {
+    animation-name:fade;
+    animation-duration: 1.96s;
+}
+
+@keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+/*Maquetado del reloj*/
+#reloj{
+    background-color: black;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px darkred;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0; 
+    width: 100%;
+}
+
+#sub{
+    overflow: hidden;
+    position: fixed;
+    display: grid;
+    margin-left: auto;
+    margin-right: 0;
+    right: 0;
+    bottom: 30px;
+}
+
+/*Maquetado del formulario*/
+
+#borrador {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+label {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+input, textarea {
+    padding: 5px;
+    margin-bottom: 10px;
+  }
+  
+#borrador  button {
+    padding: 10px 20px;
+    text-align: center;
+  }
+
+  
+  
+
